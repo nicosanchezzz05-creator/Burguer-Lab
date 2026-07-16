@@ -1,0 +1,13 @@
+@import "utilities";
+
+.body{
+	background-color: #F2B705;
+	text-align: center;
+	margin: 20px;
+	
+}
+
+
+.container-fluid{
+	background-color: #F2B705;
+}
