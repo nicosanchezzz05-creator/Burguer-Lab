@@ -1,17 +1,37 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @use "variables";
- *   | ^^^^^^^^^^^^^^^^
- *   '
- *   scss\main.scss 1:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use \"variables\";\d\a   \2502  ^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\main.scss 1:1  root stylesheet";
+.contenedor-principal {
+	background: #0d0d0d;
+	background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(89, 69, 7) 10%, rgb(242, 159, 5) 100%);
+	min-height: 100vh;
 }
+
+.intro p {
+	font-family: "JetBrains Mono";
+}
+.intro {
+	text-align: center;
+}
+
+.navbar {
+	background: hsl(0, 0%, 5%);
+	background: linear-gradient(180deg, rgb(13, 13, 13) 0%, rgb(89, 69, 7) 10%, rgb(242, 159, 5) 100%);
+}
+.navbar h1 {
+	font-family: "Bungee";
+	color: #f2b705;
+}
+.navbar .nav-link {
+	font-family: "Bungee";
+	color: #594507;
+}
+.navbar:hover {
+	color: whitesmoke;
+	transition: 0.3s;
+}
+
+.carousel-inner .carousel-item img {
+	border-radius: 5px !important;
+	border: 5px solid black;
+	overflow: hidden;
+}
+
+/*# sourceMappingURL=main.css.map */
