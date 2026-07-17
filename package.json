@@ -1,20 +1,20 @@
 {
-  "name": "burguer-lab",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/nicosanchezzz05-creator/Burguer-Lab#readme",
-  "bugs": {
-    "url": "https://github.com/nicosanchezzz05-creator/Burguer-Lab/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nicosanchezzz05-creator/Burguer-Lab.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+	"name": "burguer-lab",
+	"version": "1.0.0",
+	"description": "",
+	"homepage": "https://github.com/nicosanchezzz05-creator/Burguer-Lab#readme",
+	"bugs": {
+		"url": "https://github.com/nicosanchezzz05-creator/Burguer-Lab/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nicosanchezzz05-creator/Burguer-Lab.git"
+	},
+	"license": "ISC",
+	"author": "",
+	"type": "commonjs",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
 }
