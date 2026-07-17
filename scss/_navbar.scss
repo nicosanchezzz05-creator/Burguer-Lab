@@ -1,0 +1,33 @@
+@import "variables";
+
+.contenedor-principal{
+	background: #0D0D0D;
+	background: linear-gradient(0deg, rgba(13, 13, 13, 1) 0%, rgba(89, 69, 7, 1) 10%, rgba(242, 159, 5, 1) 100%);
+	min-height: 100vh;
+}
+
+.intro{
+	p {font-family: $fuente-parrafos;}
+	text-align: center;
+}
+
+.navbar{
+	background: hsl(0, 0%, 5%);
+	background: linear-gradient(180deg, rgba(13, 13, 13, 1) 0%, rgba(89, 69, 7, 1) 10%, rgba(242, 159, 5, 1) 100%);
+
+	h1{
+		font-family: $fuente-titulos-nav;
+		color: $color-titulos;
+	}
+
+	.nav-link{
+		font-family: $fuente-titulos-nav;
+		color: $color-nav;
+	}
+
+	&:hover{
+		color: whitesmoke;
+		transition: 0.3s;
+	}
+}
+

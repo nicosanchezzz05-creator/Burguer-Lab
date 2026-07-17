@@ -1,0 +1,12 @@
+@use "variables";
+
+.carousel-inner{
+	.carousel-item{
+		img{
+			border-radius: variables.$grosor-bordes !important;
+			border: variables.$estilo-borde;
+			overflow: hidden;
+		}
+	}
+
+}
