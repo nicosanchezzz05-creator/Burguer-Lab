@@ -3,14 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-			crossorigin="anonymous"/>
+
 		<link href="link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Bungee&family=Grenze+Gotisch:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Quicksand:wght@300..700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="css/main.css">
 		<title>Burguer Lab</title>
 	</head>
@@ -27,16 +24,16 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link" href="./pages/menu-lab/menu-lab.html">Menú Lab</a>
+							<a class="nav-link nav-link-especial" href="./pages/menu-lab/menu-lab.html">Menú Lab</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./pages/nosotros/nosotros.html">Nosotros</a>
+							<a class="nav-link nav-link-especial" href="./pages/nosotros/nosotros.html">Nosotros</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./pages/contactanos/contactanos.html">Contactanos</a>
+							<a class="nav-link nav-link-especial" href="./pages/contactanos/contactanos.html">Contactanos</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./pages/postulate/postulate.html">Postulate</a>
+							<a class="nav-link nav-link-especial" href="./pages/postulate/postulate.html">Postulate</a>
 						</li>
 					</ul>
 				</div>
@@ -53,8 +50,8 @@
 			<section class="carousel">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-1 col-md-2 col-lg-3"></div>
-						<div class="col-sm-10 col-md-8 col-lg-6">
+						<div class="col-sm-1 col-md-1 col-lg-2"></div>
+						<div class="col-sm-10 col-md-10 col-lg-8">
 							<div id="carouselExampleCaptions" class="carousel slide">
 								<div class="carousel-indicators">
 									<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -113,8 +110,25 @@
 					</div>				
 				</div>
 			</section>
+
+			<section class="menu-app">
+				<button class="boton-menu">
+					<a class="link-menu" href="./pages/menu-lab/">CONOCE NUESTRO MENU</a>
+				</button>
+				<button class="boton-playstore">
+					<a class="link-playstore" href="#">DESCARGA Y PEDIR POR LA APP</a>
+				</button>
+			</section>
+			<h3 class="titulo-prebanner">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+			<p class="descripcion-prebanner">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dicta voluptatibus facilis magnam, culpa eos? Aperiam quibusdam inventore, facere nesciunt dignissimos in sequi perspiciatis vero optio tempore dicta architecto odit!</p>
+
+			<section class="banner">
+				<img src="./assets/imagenes-decorativas/banner-short.webp" class="banner-img">
+			</section>
+
 		</main>
-		</div>
+		
+		<footer class="footer">BURGUER LAB - Todos los derechos reservados ©</footer>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

@@ -1,37 +1,92 @@
-.contenedor-principal {
-	background: #0d0d0d;
-	background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(89, 69, 7) 10%, rgb(242, 159, 5) 100%);
-	min-height: 100vh;
-}
-
-.intro p {
-	font-family: "JetBrains Mono";
-}
-.intro {
-	text-align: center;
-}
-
 .navbar {
-	background: hsl(0, 0%, 5%);
-	background: linear-gradient(180deg, rgb(13, 13, 13) 0%, rgb(89, 69, 7) 10%, rgb(242, 159, 5) 100%);
+  background: #0D0D0D;
+  background: linear-gradient(180deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
 }
 .navbar h1 {
-	font-family: "Bungee";
-	color: #f2b705;
+  font-family: "Bungee";
+  color: #F2B705;
 }
 .navbar .nav-link {
-	font-family: "Bungee";
-	color: #594507;
+  font-family: "Bungee";
+  color: #d3d2d0;
 }
-.navbar:hover {
-	color: whitesmoke;
-	transition: 0.3s;
+.navbar .nav-link-especial:hover {
+  color: #F2B705 !important;
+  transition: 0.3s;
+}
+.navbar {
+  /**<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  		<span class="navbar-toggler-icon"></span>
+  	</button>**/
+}
+.navbar .navbar-toggler {
+  background-color: #F2B705;
+  border-radius: 2px;
 }
 
 .carousel-inner .carousel-item img {
-	border-radius: 5px !important;
-	border: 5px solid black;
-	overflow: hidden;
+  border-radius: 5px !important;
+  border: 5px solid black;
+  overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.banner .banner-img {
+  width: 100%;
+  display: block;
+}
+
+.contenedor-principal {
+  background: #0D0D0D;
+  background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
+}
+
+.intro {
+  font-family: "JetBrains Mono";
+  text-align: center;
+  color: whitesmoke;
+}
+
+.menu-app {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+}
+.menu-app .boton-menu {
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #d3d2d0;
+  padding: 10px;
+}
+.menu-app .boton-playstore {
+  border-radius: 20px;
+  margin-left: 10px;
+  background-color: #d3d2d0;
+}
+.menu-app a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Bungee";
+  display: block;
+}
+
+.footer {
+  background-color: black;
+  color: #F2B705;
+  font-family: "JetBrains Mono";
+  text-align: center;
+}
+
+h3, p {
+  text-align: center;
+  color: #d3d2d0;
+  font-family: "JetBrains Mono";
 }
 
 /*# sourceMappingURL=main.css.map */
