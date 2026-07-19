@@ -4,7 +4,7 @@
 	.carousel-item{
 		img{
 			border-radius: variables.$grosor-bordes !important;
-			border: variables.$estilo-borde;
+			border: 1px solid variables.$color-titulos;
 			overflow: hidden;
 		}
 	}

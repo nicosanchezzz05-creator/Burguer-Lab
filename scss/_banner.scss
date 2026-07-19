@@ -1,11 +1,14 @@
 .banner{
-	width: 100%;
-	padding-left: 10px;
-	padding-right: 10px;
-	box-sizing: border-box;
-	
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 30px;
+
 	.banner-img{
-		width: 100%;
-		display: block;		
+		max-width: 600px;
+		width: 90%;
+		height: auto;
+		border-radius: 5px;
+
 	}
 }

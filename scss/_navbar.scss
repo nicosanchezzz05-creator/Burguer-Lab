@@ -5,20 +5,31 @@
 	background: linear-gradient(180deg, rgba(13, 13, 13, 1) 0%, rgba(33, 33, 33, 1) 55%);
 
 	h1{
-		font-family: variables.$fuente-titulos-nav;
+		font-family: variables.$alumni;
 		color: variables.$color-titulos;
+		cursor: default;
+		user-select: none;
+
+	}
+
+	h1:hover{
+		animation: tada 0.5s ease-in-out;
 	}
 
 	.nav-link{
-		font-family: variables.$fuente-titulos-nav;
+		font-family: variables.$quicksand;
+		font-size:small;
 		color: variables.$color-nav;
+
+		display: inline-block;
+		transition: all 0.3s ease-in-out;
+		cursor: pointer
 		
 	}
 
-	.nav-link-especial:hover {
-		color: #F2B705 !important;
-		transition: 0.3s;
-		
+	.nav-link:hover{
+		color: #F2B705;
+		transform: scale(1.15) rotate(2deg);
 	}
 
 	/**<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,6 +37,11 @@
 		</button>**/
 	.navbar-toggler{
 		background-color: variables.$color-titulos;
-		border-radius: 2px;
+		border-radius: 22px;}
+}
+
+@media(min-width:992px){
+	#navbarNav{
+		justify-content: right;
 	}
 }

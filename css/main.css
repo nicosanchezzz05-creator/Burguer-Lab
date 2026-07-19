@@ -3,16 +3,25 @@
   background: linear-gradient(180deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
 }
 .navbar h1 {
-  font-family: "Bungee";
+  font-family: "Alumni Sans SC";
   color: #F2B705;
+  cursor: default;
+  user-select: none;
+}
+.navbar h1:hover {
+  animation: tada 0.5s ease-in-out;
 }
 .navbar .nav-link {
-  font-family: "Bungee";
+  font-family: "Quicksand";
+  font-size: small;
   color: #d3d2d0;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
-.navbar .nav-link-especial:hover {
-  color: #F2B705 !important;
-  transition: 0.3s;
+.navbar .nav-link:hover {
+  color: #F2B705;
+  transform: scale(1.15) rotate(2deg);
 }
 .navbar {
   /**<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,24 +30,31 @@
 }
 .navbar .navbar-toggler {
   background-color: #F2B705;
-  border-radius: 2px;
+  border-radius: 22px;
 }
 
+@media (min-width: 992px) {
+  #navbarNav {
+    justify-content: right;
+  }
+}
 .carousel-inner .carousel-item img {
   border-radius: 5px !important;
-  border: 5px solid black;
+  border: 1px solid #F2B705;
   overflow: hidden;
 }
 
 .banner {
-  width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  box-sizing: border-box;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 .banner .banner-img {
-  width: 100%;
-  display: block;
+  max-width: 600px;
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .contenedor-principal {
@@ -47,46 +63,101 @@
 }
 
 .intro {
-  font-family: "JetBrains Mono";
+  font-family: "Alumni Sans SC";
   text-align: center;
   color: whitesmoke;
+}
+.intro h2 {
+  color: #F2B705;
 }
 
 .menu-app {
   display: flex;
-  padding: 10px;
+  padding: 5px;
   margin: 10px;
   justify-content: center;
+  font-size: small;
 }
 .menu-app .boton-menu {
   border-radius: 20px;
   margin-right: 10px;
-  background-color: #d3d2d0;
-  padding: 10px;
+  background-color: rgb(36, 35, 35);
+  border: 1px solid #F2B705;
 }
 .menu-app .boton-playstore {
   border-radius: 20px;
   margin-left: 10px;
-  background-color: #d3d2d0;
+  background-color: rgb(36, 35, 35);
+  border: 1px solid #F2B705;
 }
 .menu-app a {
+  font-family: "Quicksand";
+  font-size: smaller;
+  color: whitesmoke;
   text-decoration: none;
-  color: #000000;
-  font-family: "Bungee";
   display: block;
 }
 
 .footer {
   background-color: black;
   color: #F2B705;
-  font-family: "JetBrains Mono";
+  font-family: "Alumni Sans SC";
   text-align: center;
 }
 
 h3, p {
   text-align: center;
   color: #d3d2d0;
-  font-family: "JetBrains Mono";
+  font-family: "Quicksand";
+  font-size: smaller;
+}
+
+.end {
+  text-align: center;
+  color: #F2B705;
+  font-family: "Quicksand";
+  font-size: medium;
+}
+.end h2 {
+  text-align: center;
+  color: #F2B705;
+  font-family: "Alumni Sans SC";
+  font-size: xx-large !important;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "nav" "main" "footer";
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media (min-width: 480px) {
+  body {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

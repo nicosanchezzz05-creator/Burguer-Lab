@@ -6,50 +6,109 @@
 }
 
 .intro{
-	font-family: variables.$fuente-parrafos;
+	font-family: variables.$alumni;
 	text-align: center;
 	color: whitesmoke;
+	h2{
+		color: variables.$color-titulos;
+	}
 }
 
 .menu-app{
 	display: flex;
-	padding:10px;
+	padding:5px;
 	margin:10px;
 	justify-content: center;
+	font-size: small;
 	
 
 	.boton-menu{
-	border-radius: 20px;
-	margin-right: 10px;
-	background-color: variables.$color-nav;
-	padding:10px;
+		border-radius: 20px;
+		margin-right: 10px;
+		background-color: rgb(36, 35, 35);
+		border: 1px solid variables.$color-titulos;
 	}
 
 	.boton-playstore{
-	border-radius: 20px;
-	margin-left: 10px;
-	background-color: variables.$color-nav;
+		border-radius: 20px;
+		margin-left: 10px;
+		background-color: rgb(36, 35, 35);
+		border: 1px solid variables.$color-titulos;
 	}
 
-	a{
-	text-decoration: none;
-	color: variables.$color-parrafos;
-	font-family: variables.$fuente-titulos-nav;
-	display: block;
+	a{	
+		font-family: variables.$quicksand;
+		font-size: smaller;
+		color: whitesmoke;
+		text-decoration: none;
+		display: block;
 	}
 }
 
 .footer{
 	background-color: black;
 	color: variables.$color-titulos;
-	font-family: variables.$fuente-parrafos;
+	font-family: variables.$alumni;
 	text-align: center;
 }
 
 h3,p{
 	text-align: center;
 	color: variables.$color-nav;
-	font-family: variables.$fuente-parrafos;
+	font-family: variables.$quicksand;
+	font-size: smaller;
 }
+
+.end{
+	text-align: center;
+	color: variables.$color-titulos;
+	font-family: variables.$quicksand;
+	font-size:medium;	
+	h2{
+		text-align: center;
+		color: variables.$color-titulos;
+		font-family: variables.$alumni;
+		font-size:xx-large !important;
+	}
+}
+
+html,body{
+	height: 100%;
+	margin: 0;
+	
+}
+
+body{
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+	"nav"
+	"main"
+	"footer";
+}
+
+nav{grid-area: nav;}
+
+main{grid-area: main;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	width: 100%;
+}
+
+
+
+footer{
+	grid-area: footer;
+}
+
+@media(min-width: 480px){
+	body{
+		grid-template-columns: 1fr;
+	}
+}
+
 
 
