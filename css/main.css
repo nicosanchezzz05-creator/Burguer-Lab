@@ -38,10 +38,18 @@
     justify-content: right;
   }
 }
-.carousel-inner .carousel-item img {
+.carousel-inner .carousel-item .imagen-optimizada {
+  display: block;
+  width: 100%;
   border-radius: 5px !important;
   border: 1px solid #F2B705;
   overflow: hidden;
+}
+.carousel-inner .carousel-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .banner {
