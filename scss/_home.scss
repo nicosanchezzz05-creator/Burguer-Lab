@@ -6,11 +6,14 @@
 }
 
 .intro{
-	font-family: variables.$alumni;
+	font-family: variables.$resaltados;
+	color: variables.$color-nav-parrafos;
 	text-align: center;
-	color: whitesmoke;
+	font-size: x-large;
+
 	h2{
 		color: variables.$color-titulos;
+		font-size: xx-large;
 	}
 }
 
@@ -19,55 +22,49 @@
 	padding:5px;
 	margin:10px;
 	justify-content: center;
-	font-size: small;
+	font-size: x-small;
 	
 
-	.boton-menu{
-		border-radius: 20px;
+	.boton-menu, .boton-playstore{
+		background-color: rgb(36, 35, 35);
+		border-radius: variables.$grosor-bordes;
+		border: variables.$estilo-borde;
 		margin-right: 10px;
-		background-color: rgb(36, 35, 35);
-		border: 1px solid variables.$color-titulos;
-	}
-
-	.boton-playstore{
-		border-radius: 20px;
-		margin-left: 10px;
-		background-color: rgb(36, 35, 35);
-		border: 1px solid variables.$color-titulos;
-	}
+		animation:bounce 0.7s;
+		}
 
 	a{	
-		font-family: variables.$quicksand;
-		font-size: smaller;
-		color: whitesmoke;
+		font-family: variables.$textos;
+		font-size: medium;
+		color: variables.$color-nav-parrafos;
 		text-decoration: none;
 		display: block;
-	}
+	}	
 }
 
 .footer{
 	background-color: black;
+	font-family: variables.$resaltados;
 	color: variables.$color-titulos;
-	font-family: variables.$alumni;
 	text-align: center;
 }
 
 h3,p{
+	font-family: variables.$textos;
+	color: variables.$color-nav-parrafos;
 	text-align: center;
-	color: variables.$color-nav;
-	font-family: variables.$quicksand;
 	font-size: smaller;
 }
 
 .end{
-	text-align: center;
+	font-family: variables.$textos;
 	color: variables.$color-titulos;
-	font-family: variables.$quicksand;
+	text-align: center;
 	font-size:medium;	
 	h2{
-		text-align: center;
+		font-family: variables.$resaltados;
 		color: variables.$color-titulos;
-		font-family: variables.$alumni;
+		text-align: center;
 		font-size:xx-large !important;
 	}
 }
@@ -98,17 +95,12 @@ main{grid-area: main;
 	width: 100%;
 }
 
-
-
 footer{
 	grid-area: footer;
 }
 
-@media(min-width: 480px){
+@media (min-width: 480px){
 	body{
 		grid-template-columns: 1fr;
 	}
 }
-
-
-

@@ -2,18 +2,18 @@
   background: #0D0D0D;
   background: linear-gradient(180deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
 }
-.navbar h1 {
+.navbar h1, .navbar .h2-animado {
   font-family: "Alumni Sans SC";
   color: #F2B705;
   cursor: default;
   user-select: none;
 }
-.navbar h1:hover {
+.navbar h1, .navbar .h2-animado:hover {
   animation: tada 0.5s ease-in-out;
 }
 .navbar .nav-link {
   font-family: "Quicksand";
-  font-size: small;
+  font-size: medium;
   color: #d3d2d0;
   display: inline-block;
   transition: all 0.3s ease-in-out;
@@ -22,11 +22,6 @@
 .navbar .nav-link:hover {
   color: #F2B705;
   transform: scale(1.15) rotate(2deg);
-}
-.navbar {
-  /**<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-  		<span class="navbar-toggler-icon"></span>
-  	</button>**/
 }
 .navbar .navbar-toggler {
   background-color: #F2B705;
@@ -53,9 +48,9 @@
 }
 
 .banner {
-  width: 80%;
   display: flex;
   justify-content: center;
+  width: 80%;
   padding-bottom: 30px;
 }
 .banner .banner-img {
@@ -72,11 +67,13 @@
 
 .intro {
   font-family: "Alumni Sans SC";
+  color: #d3d2d0;
   text-align: center;
-  color: whitesmoke;
+  font-size: x-large;
 }
 .intro h2 {
   color: #F2B705;
+  font-size: xx-large;
 }
 
 .menu-app {
@@ -84,52 +81,47 @@
   padding: 5px;
   margin: 10px;
   justify-content: center;
-  font-size: small;
+  font-size: x-small;
 }
-.menu-app .boton-menu {
-  border-radius: 20px;
+.menu-app .boton-menu, .menu-app .boton-playstore {
+  background-color: rgb(36, 35, 35);
+  border-radius: 5px;
+  border: 1px solid #F2B705;
   margin-right: 10px;
-  background-color: rgb(36, 35, 35);
-  border: 1px solid #F2B705;
-}
-.menu-app .boton-playstore {
-  border-radius: 20px;
-  margin-left: 10px;
-  background-color: rgb(36, 35, 35);
-  border: 1px solid #F2B705;
+  animation: bounce 0.7s;
 }
 .menu-app a {
   font-family: "Quicksand";
-  font-size: smaller;
-  color: whitesmoke;
+  font-size: medium;
+  color: #d3d2d0;
   text-decoration: none;
   display: block;
 }
 
 .footer {
   background-color: black;
-  color: #F2B705;
   font-family: "Alumni Sans SC";
+  color: #F2B705;
   text-align: center;
 }
 
 h3, p {
-  text-align: center;
-  color: #d3d2d0;
   font-family: "Quicksand";
+  color: #d3d2d0;
+  text-align: center;
   font-size: smaller;
 }
 
 .end {
-  text-align: center;
-  color: #F2B705;
   font-family: "Quicksand";
+  color: #F2B705;
+  text-align: center;
   font-size: medium;
 }
 .end h2 {
-  text-align: center;
-  color: #F2B705;
   font-family: "Alumni Sans SC";
+  color: #F2B705;
+  text-align: center;
   font-size: xx-large !important;
 }
 
@@ -166,6 +158,18 @@ footer {
   body {
     grid-template-columns: 1fr;
   }
+}
+.contenedor-principal-home, .contenedor-principal-menulab, .contenedor-principal-nosotros, .contenedor-principal-contactanos, .contenedor-principal-postulate {
+  background: #0D0D0D;
+  background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
+}
+
+.titulo-prebanner {
+  font-size: xx-large;
+}
+
+.descripcion-prebanner {
+  font-size: medium;
 }
 
 /*# sourceMappingURL=main.css.map */

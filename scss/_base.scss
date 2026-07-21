@@ -1,0 +1,14 @@
+@use "variables";
+
+.contenedor-principal-home, .contenedor-principal-menulab, .contenedor-principal-nosotros, .contenedor-principal-contactanos, .contenedor-principal-postulate{
+	background: #0D0D0D;
+	background: linear-gradient(0deg, rgba(13, 13, 13, 1) 0%, rgba(33, 33, 33, 1) 55%);
+}
+
+.titulo-prebanner{
+	font-size: xx-large;
+}
+
+.descripcion-prebanner{
+	font-size: medium;
+}
