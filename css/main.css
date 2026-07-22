@@ -186,9 +186,40 @@ main.contenedor-principal-menulab .burguer-card {
   max-width: 1200px;
   justify-items: center;
 }
+@media (max-width: 768px) {
+  main.contenedor-principal-menulab .burguer-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: 100%;
+    justify-items: center;
+  }
+}
 
 .card {
   background-color: black;
+  border-radius: 10px;
+}
+.card .card-body {
+  text-align: center;
+}
+.card .list-group-item {
+  background-color: rgb(182, 181, 150);
+  border-color: black;
+}
+.card .card-link {
+  color: white;
+  text-decoration: none;
+  font-size: small;
+  border: 1px solid rgb(0, 0, 0);
+  border-color: #F2B705;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.list-group-item {
+  font-family: "Quicksand";
+  border: 10px solid none;
 }
 
 /*# sourceMappingURL=main.css.map */

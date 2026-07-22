@@ -1,22 +1,62 @@
 @use "variables";
 
 main.contenedor-principal-menulab {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	width: 100%;
 
-    .burguer-card {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        width: 100%;
-        max-width: 1200px;
-        justify-items: center; // Centra las tarjetas dentro de su celda de grid
-    }
+	.burguer-card {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+		width: 100%;
+		max-width: 1200px;
+		justify-items: center; // Centra las tarjetas dentro de su celda de grid
+	}
+
+	@media (max-width: 768px){
+	.burguer-card{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 5px;
+		width: 100%;
+		justify-items: center; // Centra las tarjetas dentro de su celda de grid
+		}
+	}
 }
 
 .card{
 	background-color: black;
+	border-radius: 10px;
+
+	.card-body{
+		text-align: center;
+	}
+
+	.list-group-item{
+		background-color: rgb(182, 181, 150);
+		border-color: black;
+	}
+
+	.card-link{
+		color: white;
+		text-decoration: none;
+		font-size: small;
+		border: 1px solid rgb(0, 0, 0);
+		border-color: variables.$color-titulos;
+		border-radius: 20px;
+		padding: 5px;
+	}
 }
+
+.list-group-item{
+	font-family: variables.$textos;
+	border: 10px solid none;
+}
+
+
+
+
+
 
