@@ -172,4 +172,23 @@ footer {
   font-size: medium;
 }
 
+main.contenedor-principal-menulab {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+main.contenedor-principal-menulab .burguer-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  justify-items: center;
+}
+
+.card {
+  background-color: black;
+}
+
 /*# sourceMappingURL=main.css.map */

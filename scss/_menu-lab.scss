@@ -1,0 +1,22 @@
+@use "variables";
+
+main.contenedor-principal-menulab {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+
+    .burguer-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+        justify-items: center; // Centra las tarjetas dentro de su celda de grid
+    }
+}
+
+.card{
+	background-color: black;
+}
+
