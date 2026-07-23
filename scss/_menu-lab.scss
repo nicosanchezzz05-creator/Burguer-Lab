@@ -29,6 +29,9 @@ main.contenedor-principal-menulab {
 .card{
 	background-color: black;
 	border-radius: 10px;
+	width: 100% !important;
+	max-width: 100%;
+
 
 	.card-body{
 		text-align: center;
