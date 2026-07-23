@@ -3,13 +3,14 @@
 main.contenedor-principal-menulab {
 	display: flex;
 	justify-content: center;
-	padding: 20px;
+	padding: 30px 20px;
 	width: 100%;
 
 	.burguer-card {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+		padding-top: 10px;
 		width: 100%;
 		max-width: 1200px;
 		justify-items: center; // Centra las tarjetas dentro de su celda de grid
@@ -18,13 +19,30 @@ main.contenedor-principal-menulab {
 	@media (max-width: 768px){
 	.burguer-card{
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 5px;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		padding: 30px 20px;
 		width: 100%;
 		justify-items: center; // Centra las tarjetas dentro de su celda de grid
 		overflow-x: hidden;
+		
 		}
 	}
+
+	@media (max-width: 580px){
+	.burguer-card{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+		padding: 30px 20px;
+		width: 100%;
+		justify-items: center; // Centra las tarjetas dentro de su celda de grid
+		overflow-x: hidden;
+		
+		}
+	}
+
+
 }
 
 .card{
@@ -32,6 +50,14 @@ main.contenedor-principal-menulab {
 	border-radius: 10px;
 	width: 100% !important;
 	max-width: 100% !important;
+	box-sizing: border-box;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	&hover{
+		transform: translateY(-8px);
+		box-shadow: 0px 0px 15px variables.$color-titulos;
+		transition: 0.5s;
+	}
+	
 
 
 	.card-body{
@@ -44,13 +70,17 @@ main.contenedor-principal-menulab {
 	}
 
 	.card-link{
+		display: inline-block;
 		color: white;
 		text-decoration: none;
 		font-size: small;
 		border: 1px solid rgb(0, 0, 0);
 		border-color: variables.$color-titulos;
 		border-radius: 20px;
-		padding: 5px;
+		padding: 5px 12px;
+		margin: 4px 2px;
+		text-align: center;
+		width: 100%;
 	}
 }
 
@@ -59,6 +89,11 @@ main.contenedor-principal-menulab {
 	border: 10px solid none;
 }
 
+.card:hover{
+	transform: translateY(-8px);
+	box-shadow: 0px 0px 15px variables.$color-titulos;
+	transition: 0.5s;
+}
 
 
 

@@ -50,11 +50,11 @@
 .banner {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   padding-bottom: 30px;
 }
 .banner .banner-img {
-  max-width: 600px;
+  max-width: 800px;
   width: 90%;
   height: auto;
   border-radius: 5px;
@@ -116,13 +116,12 @@ h3, p {
   font-family: "Quicksand";
   color: #F2B705;
   text-align: center;
-  font-size: medium;
+  font-size: xx-large;
 }
 .end h2 {
   font-family: "Alumni Sans SC";
   color: #F2B705;
   text-align: center;
-  font-size: xx-large !important;
 }
 
 html, body {
@@ -175,13 +174,14 @@ footer {
 main.contenedor-principal-menulab {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 30px 20px;
   width: 100%;
 }
 main.contenedor-principal-menulab .burguer-card {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-top: 10px;
   width: 100%;
   max-width: 1200px;
   justify-items: center;
@@ -189,8 +189,20 @@ main.contenedor-principal-menulab .burguer-card {
 @media (max-width: 768px) {
   main.contenedor-principal-menulab .burguer-card {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    justify-items: center;
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 580px) {
+  main.contenedor-principal-menulab .burguer-card {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 10px;
+    padding: 30px 20px;
     width: 100%;
     justify-items: center;
     overflow-x: hidden;
@@ -202,6 +214,13 @@ main.contenedor-principal-menulab .burguer-card {
   border-radius: 10px;
   width: 100% !important;
   max-width: 100% !important;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cardhover {
+  transform: translateY(-8px);
+  box-shadow: 0px 0px 15px #F2B705;
+  transition: 0.5s;
 }
 .card .card-body {
   text-align: center;
@@ -211,18 +230,59 @@ main.contenedor-principal-menulab .burguer-card {
   border-color: black;
 }
 .card .card-link {
+  display: inline-block;
   color: white;
   text-decoration: none;
   font-size: small;
   border: 1px solid rgb(0, 0, 0);
   border-color: #F2B705;
   border-radius: 20px;
-  padding: 5px;
+  padding: 5px 12px;
+  margin: 4px 2px;
+  text-align: center;
+  width: 100%;
 }
 
 .list-group-item {
   font-family: "Quicksand";
   border: 10px solid none;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 0px 15px #F2B705;
+  transition: 0.5s;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.intro-nosotros {
+  font-family: "Alumni Sans SC";
+  font-size: xx-large;
+  color: #F2B705;
+  width: 80%;
+  text-align: center;
+}
+.intro-nosotros p {
+  font-family: "Quicksand";
+  font-size: x-large;
+}
+
+.map {
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  font-size: xx-large;
+  margin: 30px;
+}
+.map .gmap_iframe {
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

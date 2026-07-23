@@ -1,0 +1,36 @@
+@use "variables";
+
+main{grid-area: main;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	width: 100%;
+}
+
+.intro-nosotros{
+	font-family: variables.$resaltados;
+	font-size: xx-large;
+	color: variables.$color-titulos;
+	width: 80%;
+	text-align: center;
+
+	p{
+		font-family: variables.$textos;
+		font-size: x-large;
+	}
+}
+
+.map{
+	font-family: variables.$resaltados;
+	color: variables.$color-titulos;
+	font-size: xx-large;
+	margin: 30px;
+
+	.gmap_iframe{
+		border-radius: 10px;
+	}
+}
+
+
+
