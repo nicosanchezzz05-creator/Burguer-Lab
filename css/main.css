@@ -193,6 +193,7 @@ main.contenedor-principal-menulab .burguer-card {
     gap: 5px;
     width: 100%;
     justify-items: center;
+    overflow-x: hidden;
   }
 }
 
@@ -200,7 +201,7 @@ main.contenedor-principal-menulab .burguer-card {
   background-color: black;
   border-radius: 10px;
   width: 100% !important;
-  max-width: 100%;
+  max-width: 100% !important;
 }
 .card .card-body {
   text-align: center;
